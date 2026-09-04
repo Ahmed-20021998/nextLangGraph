@@ -43,9 +43,9 @@ export default function AIChat() {
     setError(null);
 
     try {
-      console.log("Attempting to fetch from:", "https://ai-lang-graph-jj5z-kw1iyeghs-ahmeds-projects-5024b40d.vercel.app/ask");
+      console.log("Attempting to fetch from:", "https://ai-lang-graph-jj5z.vercel.app/ask");
       const response = await fetch(
-    "https://ai-lang-graph-jj5z-2fz8lex9q-ahmeds-projects-5024b40d.vercel.app/ask",
+    "https://ai-lang-graph-jj5z.vercel.app/ask",
   {
     method: "POST",
     headers: {
