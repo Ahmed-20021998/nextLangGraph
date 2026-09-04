@@ -44,11 +44,18 @@ export default function AIChat() {
 
     try {
       console.log("Attempting to fetch from:", "https://ai-lang-graph-jj5z-kw1iyeghs-ahmeds-projects-5024b40d.vercel.app/ask");
-      const response = await fetch("https://ai-lang-graph-jj5z-kw1iyeghs-ahmeds-projects-5024b40d.vercel.app/ask", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMsg.content }),
-      });
+      const response = await fetch(
+    "https://ai-lang-graph-jj5z-2fz8lex9q-ahmeds-projects-5024b40d.vercel.app/ask",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      message: input,
+    }),
+  }
+);
 
       console.log("Response received status:", response.status);
       if (!response.ok) {
